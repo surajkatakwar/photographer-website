@@ -107,6 +107,8 @@ footer {
 .slideshow-container {
   position: relative;
   max-width: 100%;
+  max-height: 500px; /* Set the maximum height of the slideshow */
+  overflow: hidden; /* Hide any overflow to prevent scrollbars */
 }
 
 .slide {
@@ -115,6 +117,9 @@ footer {
 
 .fade {
   animation: fade 5s ease infinite;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 @keyframes fade {
